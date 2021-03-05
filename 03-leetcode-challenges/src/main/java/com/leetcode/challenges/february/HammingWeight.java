@@ -1,16 +1,15 @@
 package com.leetcode.challenges.february;
 
 public class HammingWeight {
-	public static int hammingWeight(long n) {
-		String binary = Long.toBinaryString(n);
-		n = Long.parseLong(binary);
-		int count = 0;
-		while (n != 0) {
-			if (n % 10 == 1) {
-				count++;
+	public static int hammingWeight(int n) {
+		int bits = 0;
+		int mask = 1;
+		for (int i = 0; i < 32; i++) {
+			if ((n & mask) != 0) {
+				bits++;
 			}
-			n = n / 10;
+			mask <<= 1;
 		}
-		return count;
+		return bits;
 	}
 }
