@@ -11,9 +11,6 @@ public class SwappingNodesInLinkedListTest {
 	public void testExemple1() throws Exception {
 		int[] array = { 1, 2 };
 		ListNode header = null;
-		for (int i = 0; i < array.length; i++) {
-			header = swap.addLast(header, array[i]);
-		}
 		int k = 1;
 		int[] expected = { 1, 4, 3, 2, 5 };
 
