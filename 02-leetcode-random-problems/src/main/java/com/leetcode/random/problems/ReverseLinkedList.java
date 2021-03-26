@@ -2,7 +2,6 @@ package com.leetcode.random.problems;
 
 public class ReverseLinkedList {
 
-
 	public int[] ListNodeToIntArray(ListNode root) {
 		int[] array = new int[Util.size(root)];
 		ListNode current = root;
