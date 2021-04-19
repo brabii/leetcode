@@ -4,10 +4,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MergeArrays {
-	public static void main(String[] args) {
-		int[][] intervals = { { 1, 3 }, { 2, 6 }, { 8, 10 }, { 15, 18 } };
-		new MergeArrays().merge(intervals);
-	}
 
 	public int[][] merge(int[][] intervals) {
 		if (intervals.length == 0 || intervals.length == 1) {
